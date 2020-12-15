@@ -55,7 +55,7 @@ function manejarCrearAnimales(){
         body:JSON.stringify(nuevoAnimal),
         headers:{'Content-Type': 'application/json'}
     };
-console.log("entra 1");
+    console.log("entra 1");
     fetch(url,init)
     .then(response =>{
         if(response.ok){
@@ -71,14 +71,11 @@ console.log("entra 1");
 function creacionAnimal(datosNuevos){
 
     let parrafo = document.getElementById("texto");
-
     if(datosNuevos == "Error"){
         return "Se ha producido un error, vuelva a intentarlo"
     } else {
         console.log(datosNuevos);
-
     }
-
 }
 
 
